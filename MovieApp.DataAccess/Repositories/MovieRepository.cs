@@ -1,10 +1,6 @@
-﻿using MovieApp.DataAccess.Abstraction;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieApp.DataAccess.Abstraction;
 using MovieApp.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MovieApp.DataAccess.Repositories
 {
@@ -19,17 +15,17 @@ namespace MovieApp.DataAccess.Repositories
 
         public IEnumerable<MovieDto> GetAll()
         {
-            return _dbContext.Movies;
+            return _dbContext.Movies.Include(x => x.User);
         }
 
         public IEnumerable<MovieDto> GetByGenre(int genre)
         {
-            return _dbContext.Movies.Where(x => x.Genre == genre);
+            return _dbContext.Movies.Include(x => x.User).Where(x => x.Genre == genre);
         }
 
         public MovieDto GetById(int id)
         {
-            return _dbContext.Movies.FirstOrDefault(x => x.Id == id);
+            return _dbContext.Movies.Include(x => x.User).FirstOrDefault(x => x.Id == id);
         }
         public void Create(MovieDto entity)
         {
@@ -47,5 +43,6 @@ namespace MovieApp.DataAccess.Repositories
             _dbContext.Movies.Remove(entity);
             _dbContext.SaveChanges();
         }
+      
     }
 }

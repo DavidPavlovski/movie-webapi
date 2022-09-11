@@ -1,9 +1,4 @@
 ﻿using MovieApp.InterfaceModels.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MovieApp.Domain.Entities
 {
@@ -15,8 +10,24 @@ namespace MovieApp.Domain.Entities
         public string PosterUrl { get; set; }
         public int Year { get; set; }
         public int Genre { get; set; }
+        public DateTime Posted { get; set; }
+        public int UserId { get; set; }
+        public UserDto User { get; set; } 
+        public ICollection<ReviewDto> Reviews { get; set; }
 
-        public void UpdateEntity(MovieModel model)
+        public MovieDto() { }
+        public MovieDto(string title, string description, string posterUrl, int year, int genre, int userId)
+        {
+            Title = title;
+            Description = description;
+            PosterUrl = posterUrl;
+            Year = year;
+            Genre = genre;
+            Posted = DateTime.Now;
+            UserId = userId;
+        }
+
+        public void UpdateEntity(UpdateMovieModel model)
         {
             Title = model.Title;
             Description = model.Description;

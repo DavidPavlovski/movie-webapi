@@ -1,11 +1,6 @@
 ﻿using MovieApp.Domain.Entities;
 using MovieApp.InterfaceModels.Enums;
 using MovieApp.InterfaceModels.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MovieApp.Mappers
 {
@@ -20,9 +15,10 @@ namespace MovieApp.Mappers
                 PosterUrl = model.PosterUrl,
                 Year = model.Year,
                 Genre = (int)model.Genre,
+                UserId = model.UserId
             };
-
         }
+
         public static MovieModel ToMovieModel(this MovieDto model)
         {
             return new MovieModel
@@ -32,8 +28,25 @@ namespace MovieApp.Mappers
                 Description = model.Description,
                 PosterUrl = model.PosterUrl,
                 Year = model.Year,
-                Genre = (Genre)model.Genre
+                Genre = (Genre)model.Genre,
+                UserId = model.UserId,
             };
+        }
+
+
+        public static MovieDetailsModel ToMovieDetails(this MovieDto model)
+        {
+            return new MovieDetailsModel
+            {
+                Id = model.Id,
+                Title = model.Title,
+                Description = model.Description,
+                PosterUrl = model.PosterUrl,
+                Year = model.Year,
+                Genre = (Genre)model.Genre,
+                User = model.User.ToMovieOwner(),
+            };
+
         }
     }
 }

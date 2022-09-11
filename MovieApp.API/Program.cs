@@ -1,4 +1,8 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using MovieApp.Configurations;
 using MovieApp.Utilities;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +13,33 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.RegisterModule(builder.Configuration.GetConnectionString("DefaultConnection"));
+
+var appConfig = builder.Configuration.GetSection("AppSettings");
+builder.Services.Configure<AppSettings>(appConfig);
+
+var appSettings = appConfig.Get<AppSettings>();
+var secret = Encoding.ASCII.GetBytes(appSettings.Secret);
+
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(secret),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
+
+
+builder.Services.RegisterModule(appSettings.ConnectionString);
 
 var app = builder.Build();
 
@@ -20,8 +50,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(action => action
+                      .WithOrigins(appSettings.AllowedOrigins)
+                      .AllowAnyHeader()
+                      .AllowAnyMethod()
+                      );
+
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

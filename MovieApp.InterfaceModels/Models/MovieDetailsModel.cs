@@ -1,8 +1,13 @@
 ﻿using MovieApp.InterfaceModels.Enums;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace MovieApp.InterfaceModels.Models
 {
-    public class MovieModel
+    public class MovieDetailsModel
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -10,6 +15,7 @@ namespace MovieApp.InterfaceModels.Models
         public string PosterUrl { get; set; }
         public int Year { get; set; }
         public Genre Genre { get; set; }
-        public int UserId { get; set; }
+        public MovieOwnerModel User { get; set; }
+
     }
 }

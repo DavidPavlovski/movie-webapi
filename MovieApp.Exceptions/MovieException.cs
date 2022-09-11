@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MovieApp.Exceptions
+﻿namespace MovieApp.Exceptions
 {
     public class MovieException : Exception
     {
-        public MovieException() : base("Something went wrong.Try again later.")
-        {
 
-        }
-        public MovieException(string message) : base(message)
+        public int? MovieId { get; set; }
+        public int StatusCode { get; set; }
+
+        public MovieException(int statusCode, string message) : base(message)
         {
+            StatusCode = statusCode;
         }
+        public MovieException(int? movieId, int statusCode, string message) : base(message)
+        {
+            MovieId = movieId;
+            StatusCode = statusCode;
+        }
+
     }
 }

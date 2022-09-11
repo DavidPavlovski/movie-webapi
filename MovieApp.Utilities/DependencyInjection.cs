@@ -6,17 +6,12 @@ using MovieApp.DataAccess.Repositories;
 using MovieApp.Domain.Entities;
 using MovieApp.Services.Abstraction;
 using MovieApp.Services.Implementation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MovieApp.Utilities
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection RegisterModule(this IServiceCollection services , string connetctionString)
+        public static IServiceCollection RegisterModule(this IServiceCollection services, string connetctionString)
         {
 
             services.AddDbContext<MovieAppDbContext>(options =>
@@ -25,11 +20,14 @@ namespace MovieApp.Utilities
             });
 
             //Services
+            services.AddTransient<IUserService, UserService>();
             services.AddTransient<IMovieService, MovieService>();
+            services.AddTransient<IReviewService, ReviewService>();
 
             //Repositories
-            //services.AddTransient<IRepository<MovieDto>, MovieStaticRepository>();
             services.AddTransient<IRepository<MovieDto>, MovieRepository>();
+            services.AddTransient<IRepository<UserDto>, UserRepository>();
+            services.AddTransient<IRepository<ReviewDto>, ReviewRepository>();
 
             return services;
         }
