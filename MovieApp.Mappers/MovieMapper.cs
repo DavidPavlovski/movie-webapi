@@ -44,7 +44,7 @@ namespace MovieApp.Mappers
                 PosterUrl = model.PosterUrl,
                 Year = model.Year,
                 Genre = (Genre)model.Genre,
-                User = model.User.ToMovieOwner(),
+                User = model.User.ToEntityOwnerModel(),
             };
 
         }

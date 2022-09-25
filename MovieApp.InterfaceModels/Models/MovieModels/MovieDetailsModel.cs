@@ -16,7 +16,7 @@ namespace MovieApp.InterfaceModels.Models.MovieModels
         public string PosterUrl { get; set; }
         public int Year { get; set; }
         public Genre Genre { get; set; }
-        public MovieOwnerModel User { get; set; }
+        public EntityOwnerModel User { get; set; }
 
     }
 }

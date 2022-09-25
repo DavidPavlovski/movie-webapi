@@ -22,7 +22,7 @@ namespace MovieApp.Mappers
                 Id = model.Id,
                 Rating = model.Rating,
                 Review = model.Review,
-                User = model.User.ToReviewOwnerModel()
+                User = model.User.ToEntityOwnerModel()
             };
         }
     }

@@ -22,22 +22,10 @@ namespace MovieApp.Mappers
                 Email = model.Email,
             };
         }
-
-        public static MovieOwnerModel ToMovieOwner(this UserDto model)
+      
+        public static EntityOwnerModel ToEntityOwnerModel(this UserDto model)
         {
-            return new MovieOwnerModel
-            {
-                Id = model.Id,
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                Username = model.Username,
-                Email = model.Username,
-                FavouriteGenre = (Genre)model.FavouriteGenre
-            };
-        }
-        public static ReviewOwnerModel ToReviewOwnerModel(this UserDto model)
-        {
-            return new ReviewOwnerModel
+            return new EntityOwnerModel
             {
                 Id = model.Id,
                 FirstName = model.FirstName,

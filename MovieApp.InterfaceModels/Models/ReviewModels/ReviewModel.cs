@@ -13,7 +13,7 @@ namespace MovieApp.InterfaceModels.Models.ReviewModels
         public int Rating { get; set; }
         public string Review { get; set; }
         public int MovieId { get; set; }
-        public ReviewOwnerModel User { get; set; }
+        public EntityOwnerModel User { get; set; }
         public DateTime Posted { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieApp.InterfaceModels.Models.UserModels
 {
-    public class MovieOwnerModel
+    public class EntityOwnerModel
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
