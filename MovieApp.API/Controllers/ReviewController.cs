@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MovieApp.Configurations;
 using MovieApp.Exceptions;
-using MovieApp.InterfaceModels.Models;
+using MovieApp.InterfaceModels.Models.ReviewModels;
 using MovieApp.Services.Abstraction;
 using System.Security.Claims;
 
@@ -45,18 +45,57 @@ namespace MovieApp.API.Controllers
 
 
         [HttpPut("EditReview")]
-        public IActionResult Edit()
+        public IActionResult Edit([FromBody] UpdateReviewModel model)
         {
-            return Ok();
+            try
+            {
+
+                var authorizedUserId = GetAuthorizedId();
+                if (model.UserId != authorizedUserId)
+                {
+                    throw new UserException(403, authorizedUserId, "You are not authorized to perform this action");
+                }
+                _reviewService.Update(model);
+                return Ok("Review updated successfully.");
+            }
+            catch (UserException ex)
+            {
+                return StatusCode(ex.StatusCode, ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(_appSettings.DefaultErrorMessage);
+            }
         }
 
 
-        [HttpDelete("DeleteReview")]
-        public IActionResult Delete()
+        [HttpDelete("Delete/Id/{id}")]
+        public IActionResult Delete([FromRoute] int id)
         {
-            return Ok();
+            try
+            {
+                var item = _reviewService.GetById(id);
+                var userId = GetAuthorizedId();
+                if (item.User.Id != userId)
+                {
+                    throw new UserException(403, item.User.Id, "You are not authorized to perform this action");
+                }
+                _reviewService.Delete(id);
+                return Ok("Review deleted successfully");
+            }
+            catch (ReviewException ex)
+            {
+                return StatusCode(ex.StatusCode, ex.Message);
+            }
+            catch (UserException ex)
+            {
+                return StatusCode(ex.StatusCode, ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(_appSettings.DefaultErrorMessage);
+            }
         }
-
 
         private int GetAuthorizedId()
         {

@@ -1,4 +1,5 @@
-﻿using MovieApp.DataAccess.Abstraction;
+﻿using Microsoft.EntityFrameworkCore;
+using MovieApp.DataAccess.Abstraction;
 using MovieApp.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -24,9 +25,10 @@ namespace MovieApp.DataAccess.Repositories
             _dbContext.SaveChanges();
         }
 
-        public void Delete(ReviewDto id)
+        public void Delete(ReviewDto entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Reviews.Remove(entity);
+            _dbContext.SaveChanges();
         }
 
         public IEnumerable<ReviewDto> GetAll()
@@ -41,12 +43,13 @@ namespace MovieApp.DataAccess.Repositories
 
         public ReviewDto GetById(int id)
         {
-            throw new NotImplementedException();
+            return _dbContext.Reviews.Include(x => x.User).SingleOrDefault(x => x.Id == id);
         }
 
         public void Update(ReviewDto entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Reviews.Update(entity);
+            _dbContext.SaveChanges();
         }
     }
 }

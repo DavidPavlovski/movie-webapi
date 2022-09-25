@@ -1,6 +1,6 @@
 ﻿using MovieApp.Domain.Entities;
 using MovieApp.InterfaceModels.Enums;
-using MovieApp.InterfaceModels.Models;
+using MovieApp.InterfaceModels.Models.UserModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +26,18 @@ namespace MovieApp.Mappers
         public static MovieOwnerModel ToMovieOwner(this UserDto model)
         {
             return new MovieOwnerModel
+            {
+                Id = model.Id,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                Username = model.Username,
+                Email = model.Username,
+                FavouriteGenre = (Genre)model.FavouriteGenre
+            };
+        }
+        public static ReviewOwnerModel ToReviewOwnerModel(this UserDto model)
+        {
+            return new ReviewOwnerModel
             {
                 Id = model.Id,
                 FirstName = model.FirstName,

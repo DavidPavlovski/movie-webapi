@@ -1,4 +1,4 @@
-﻿using MovieApp.InterfaceModels.Models;
+﻿using MovieApp.InterfaceModels.Models.MovieModels;
 
 namespace MovieApp.Domain.Entities
 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApp.InterfaceModels.Models
+namespace MovieApp.InterfaceModels.Models.ReviewModels
 {
     public class SubmitReviewModel
     {

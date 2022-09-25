@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieApp.InterfaceModels.Models.ReviewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,8 @@ namespace MovieApp.Domain.Entities
         public string Review { get; set; }
         public int MovieId { get; set; }
         public MovieDto Movie { get; set; }
-        public int UserId { get; set; }
-        public UserDto User { get; set; }
+        public int? UserId { get; set; }
+        public UserDto? User { get; set; }
         public DateTime Posted { get; set; }
 
         public ReviewDto()
@@ -28,6 +29,12 @@ namespace MovieApp.Domain.Entities
             UserId = userId;
             MovieId = movieId;
             Posted = DateTime.Now;
+        }
+
+        public void Update(UpdateReviewModel model)
+        {
+            Rating = model.Rating;
+            Review = model.Review;
         }
     }
 }

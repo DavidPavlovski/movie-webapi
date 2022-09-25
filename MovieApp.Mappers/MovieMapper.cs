@@ -1,6 +1,6 @@
 ﻿using MovieApp.Domain.Entities;
 using MovieApp.InterfaceModels.Enums;
-using MovieApp.InterfaceModels.Models;
+using MovieApp.InterfaceModels.Models.MovieModels;
 
 namespace MovieApp.Mappers
 {

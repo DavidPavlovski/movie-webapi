@@ -21,15 +21,22 @@ namespace MovieApp.DataAccess
             builder.Entity<ReviewDto>(x => x.ToTable("Review"));
 
             builder.Entity<ReviewDto>()
-                .HasOne(r => r.User)
-                .WithMany(u => u.SubmittedReviews)
-                .HasForeignKey(r => r.UserId);
+                  .HasOne(r => r.User)
+                  .WithMany(u => u.SubmittedReviews)
+                  .OnDelete(DeleteBehavior.NoAction)
+                  .HasForeignKey(r => r.UserId)
+                  .IsRequired(false);
 
             builder.Entity<ReviewDto>()
                 .HasOne(r => r.Movie)
                 .WithMany(m => m.Reviews)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasForeignKey(r => r.MovieId);
 
+            builder.Entity<MovieDto>()
+                .HasOne(m => m.User)
+                .WithMany(u => u.SubmittedMovies)
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.Entity<UserDto>().HasData(
                 new UserDto("David", "Pavlovski", "dPavlovski", "david.pavlovski@hotmail.com", PasswordHasher.HashPassword("password123"), 1) { Id = 1 },
@@ -119,24 +126,24 @@ namespace MovieApp.DataAccess
                 new ReviewDto(5, "Review from user 3 - 17 ", 3, 17) { Id = 53 },
                 new ReviewDto(5, "Review from user 3 - 18 ", 3, 18) { Id = 54 },
 
-                new ReviewDto(5, "Review from user 4 - 1 ", 3, 1) { Id = 55 },
-                new ReviewDto(5, "Review from user 4 - 2 ", 3, 2) { Id = 56 },
-                new ReviewDto(5, "Review from user 4 - 3 ", 3, 3) { Id = 57 },
-                new ReviewDto(5, "Review from user 4 - 4 ", 3, 4) { Id = 58 },
-                new ReviewDto(5, "Review from user 4 - 5 ", 3, 5) { Id = 59 },
-                new ReviewDto(5, "Review from user 4 - 6 ", 3, 6) { Id = 60 },
-                new ReviewDto(5, "Review from user 4 - 7 ", 3, 7) { Id = 61 },
-                new ReviewDto(5, "Review from user 4 - 8 ", 3, 8) { Id = 62 },
-                new ReviewDto(5, "Review from user 4 - 9 ", 3, 9) { Id = 63 },
-                new ReviewDto(5, "Review from user 4 - 10 ", 3, 10) { Id = 64 },
-                new ReviewDto(5, "Review from user 4 - 11 ", 3, 11) { Id = 65 },
-                new ReviewDto(5, "Review from user 4 - 12 ", 3, 12) { Id = 66 },
-                new ReviewDto(5, "Review from user 4 - 13 ", 3, 13) { Id = 67 },
-                new ReviewDto(5, "Review from user 4 - 14 ", 3, 14) { Id = 68 },
-                new ReviewDto(5, "Review from user 4 - 15 ", 3, 15) { Id = 69 },
-                new ReviewDto(5, "Review from user 4 - 16 ", 3, 16) { Id = 70 },
-                new ReviewDto(5, "Review from user 4 - 17 ", 3, 17) { Id = 71 },
-                new ReviewDto(5, "Review from user 4 - 18 ", 3, 18) { Id = 72 }
+                new ReviewDto(5, "Review from user 4 - 1 ", 4, 1) { Id = 55 },
+                new ReviewDto(5, "Review from user 4 - 2 ", 4, 2) { Id = 56 },
+                new ReviewDto(5, "Review from user 4 - 3 ", 4, 3) { Id = 57 },
+                new ReviewDto(5, "Review from user 4 - 4 ", 4, 4) { Id = 58 },
+                new ReviewDto(5, "Review from user 4 - 5 ", 4, 5) { Id = 59 },
+                new ReviewDto(5, "Review from user 4 - 6 ", 4, 6) { Id = 60 },
+                new ReviewDto(5, "Review from user 4 - 7 ", 4, 7) { Id = 61 },
+                new ReviewDto(5, "Review from user 4 - 8 ", 4, 8) { Id = 62 },
+                new ReviewDto(5, "Review from user 4 - 9 ", 4, 9) { Id = 63 },
+                new ReviewDto(5, "Review from user 4 - 10 ", 4, 10) { Id = 64 },
+                new ReviewDto(5, "Review from user 4 - 11 ", 4, 11) { Id = 65 },
+                new ReviewDto(5, "Review from user 4 - 12 ", 4, 12) { Id = 66 },
+                new ReviewDto(5, "Review from user 4 - 13 ", 4, 13) { Id = 67 },
+                new ReviewDto(5, "Review from user 4 - 14 ", 4, 14) { Id = 68 },
+                new ReviewDto(5, "Review from user 4 - 15 ", 4, 15) { Id = 69 },
+                new ReviewDto(5, "Review from user 4 - 16 ", 4, 16) { Id = 70 },
+                new ReviewDto(5, "Review from user 4 - 17 ", 4, 17) { Id = 71 },
+                new ReviewDto(5, "Review from user 4 - 18 ", 4, 18) { Id = 72 }
                 );
         }
     }

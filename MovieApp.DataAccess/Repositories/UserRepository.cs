@@ -26,6 +26,10 @@ namespace MovieApp.DataAccess.Repositories
 
         public void Delete(UserDto entity)
         {
+            foreach(var r in entity.SubmittedReviews)
+            {
+                r.UserId = null;
+            }
             _dbContext.Users.Remove(entity);
             _dbContext.SaveChanges();
         }
@@ -43,7 +47,7 @@ namespace MovieApp.DataAccess.Repositories
 
         public UserDto GetById(int id)
         {
-            return _dbContext.Users.Include(x => x.SubmittedMovies).FirstOrDefault(x => x.Id == 1);
+            return _dbContext.Users.Include(x => x.SubmittedMovies).Include(x => x.SubmittedReviews).FirstOrDefault(x => x.Id == id);
         }
 
         public void Update(UserDto entity)

@@ -1,7 +1,7 @@
 ﻿using MovieApp.DataAccess.Abstraction;
 using MovieApp.Domain.Entities;
 using MovieApp.Exceptions;
-using MovieApp.InterfaceModels.Models;
+using MovieApp.InterfaceModels.Models.MovieModels;
 using MovieApp.Mappers;
 using MovieApp.Services.Abstraction;
 

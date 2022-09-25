@@ -12,7 +12,7 @@ using MovieApp.DataAccess;
 namespace MovieApp.DataAccess.Migrations
 {
     [DbContext(typeof(MovieAppDbContext))]
-    [Migration("20220911161849_init")]
+    [Migration("20220912205347_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,7 +68,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 1,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7257),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2061),
                             PosterUrl = "some image url",
                             Title = "Star wars episode 4",
                             UserId = 1,
@@ -79,7 +79,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 2,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7298),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2099),
                             PosterUrl = "some image url",
                             Title = "Star wars episode 5",
                             UserId = 1,
@@ -90,7 +90,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 3,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7301),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2102),
                             PosterUrl = "some image url",
                             Title = "Star wars episode 6",
                             UserId = 1,
@@ -101,7 +101,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 4,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7304),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2104),
                             PosterUrl = "some image url",
                             Title = "Star wars episode 7",
                             UserId = 1,
@@ -112,7 +112,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 5,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7306),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2107),
                             PosterUrl = "some image url",
                             Title = "Harry Potter 1",
                             UserId = 2,
@@ -123,7 +123,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 6,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7309),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2110),
                             PosterUrl = "some image url",
                             Title = "Harry Potter 2",
                             UserId = 2,
@@ -134,7 +134,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 7,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7312),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2113),
                             PosterUrl = "some image url",
                             Title = "Harry Potter 3",
                             UserId = 2,
@@ -145,7 +145,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 8,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7315),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2115),
                             PosterUrl = "some image url",
                             Title = "Harry Potter 4",
                             UserId = 2,
@@ -156,7 +156,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 9,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7318),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2119),
                             PosterUrl = "some image url",
                             Title = "Harry Potter 5",
                             UserId = 2,
@@ -167,7 +167,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 10,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7321),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2122),
                             PosterUrl = "some image url",
                             Title = "Movie 1",
                             UserId = 3,
@@ -178,7 +178,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 11,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7323),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2124),
                             PosterUrl = "some image url",
                             Title = "Movie 2",
                             UserId = 3,
@@ -189,7 +189,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 12,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7326),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2127),
                             PosterUrl = "some image url",
                             Title = "Movie 3",
                             UserId = 3,
@@ -200,7 +200,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 13,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7329),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2130),
                             PosterUrl = "some image url",
                             Title = "Movie 4",
                             UserId = 3,
@@ -211,7 +211,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 14,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7332),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2133),
                             PosterUrl = "some image url",
                             Title = "Movie 5",
                             UserId = 3,
@@ -222,7 +222,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 15,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7335),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2136),
                             PosterUrl = "some image url",
                             Title = "Movie 6",
                             UserId = 4,
@@ -233,7 +233,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 16,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7337),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2138),
                             PosterUrl = "some image url",
                             Title = "Movie 7",
                             UserId = 4,
@@ -244,7 +244,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 17,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7340),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2141),
                             PosterUrl = "some image url",
                             Title = "Movie 8",
                             UserId = 4,
@@ -255,7 +255,7 @@ namespace MovieApp.DataAccess.Migrations
                             Id = 18,
                             Description = "description goes here",
                             Genre = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7344),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2144),
                             PosterUrl = "some image url",
                             Title = "Movie 9",
                             UserId = 4,
@@ -284,7 +284,7 @@ namespace MovieApp.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
+                    b.Property<int?>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -300,7 +300,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 1,
                             MovieId = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7372),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2171),
                             Rating = 5,
                             Review = "Review from user 1 - 1 ",
                             UserId = 1
@@ -309,7 +309,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 2,
                             MovieId = 2,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7377),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2174),
                             Rating = 5,
                             Review = "Review from user 1 - 2 ",
                             UserId = 1
@@ -318,7 +318,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 3,
                             MovieId = 3,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7380),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2177),
                             Rating = 5,
                             Review = "Review from user 1 - 3 ",
                             UserId = 1
@@ -327,7 +327,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 4,
                             MovieId = 4,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7383),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2180),
                             Rating = 5,
                             Review = "Review from user 1 - 4 ",
                             UserId = 1
@@ -336,7 +336,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 5,
                             MovieId = 5,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7385),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2182),
                             Rating = 5,
                             Review = "Review from user 1 - 5 ",
                             UserId = 1
@@ -345,7 +345,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 6,
                             MovieId = 6,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7388),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2185),
                             Rating = 5,
                             Review = "Review from user 1 - 6 ",
                             UserId = 1
@@ -354,7 +354,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 7,
                             MovieId = 7,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7390),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2188),
                             Rating = 5,
                             Review = "Review from user 1 - 7 ",
                             UserId = 1
@@ -363,7 +363,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 8,
                             MovieId = 8,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7393),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2190),
                             Rating = 5,
                             Review = "Review from user 1 - 8 ",
                             UserId = 1
@@ -372,7 +372,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 9,
                             MovieId = 9,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7395),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2193),
                             Rating = 5,
                             Review = "Review from user 1 - 9 ",
                             UserId = 1
@@ -381,7 +381,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 10,
                             MovieId = 10,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7398),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2196),
                             Rating = 5,
                             Review = "Review from user 1 - 10 ",
                             UserId = 1
@@ -390,7 +390,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 11,
                             MovieId = 11,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7400),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2198),
                             Rating = 5,
                             Review = "Review from user 1 - 11 ",
                             UserId = 1
@@ -399,7 +399,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 12,
                             MovieId = 12,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7403),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2201),
                             Rating = 5,
                             Review = "Review from user 1 - 12 ",
                             UserId = 1
@@ -408,7 +408,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 13,
                             MovieId = 13,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7405),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2204),
                             Rating = 5,
                             Review = "Review from user 1 - 13 ",
                             UserId = 1
@@ -417,7 +417,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 14,
                             MovieId = 14,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7408),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2206),
                             Rating = 5,
                             Review = "Review from user 1 - 14 ",
                             UserId = 1
@@ -426,7 +426,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 15,
                             MovieId = 15,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7410),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2209),
                             Rating = 5,
                             Review = "Review from user 1 - 15 ",
                             UserId = 1
@@ -435,7 +435,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 16,
                             MovieId = 16,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7413),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2211),
                             Rating = 5,
                             Review = "Review from user 1 - 16 ",
                             UserId = 1
@@ -444,7 +444,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 17,
                             MovieId = 17,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7416),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2214),
                             Rating = 5,
                             Review = "Review from user 1 - 17 ",
                             UserId = 1
@@ -453,7 +453,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 18,
                             MovieId = 18,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7418),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2217),
                             Rating = 5,
                             Review = "Review from user 1 - 18 ",
                             UserId = 1
@@ -462,7 +462,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 19,
                             MovieId = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7421),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2219),
                             Rating = 5,
                             Review = "Review from user 2 - 1 ",
                             UserId = 2
@@ -471,7 +471,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 20,
                             MovieId = 2,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7423),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2222),
                             Rating = 5,
                             Review = "Review from user 2 - 2 ",
                             UserId = 2
@@ -480,7 +480,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 21,
                             MovieId = 3,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7426),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2225),
                             Rating = 5,
                             Review = "Review from user 2 - 3 ",
                             UserId = 2
@@ -489,7 +489,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 22,
                             MovieId = 4,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7429),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2228),
                             Rating = 5,
                             Review = "Review from user 2 - 4 ",
                             UserId = 2
@@ -498,7 +498,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 23,
                             MovieId = 5,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7431),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2231),
                             Rating = 5,
                             Review = "Review from user 2 - 5 ",
                             UserId = 2
@@ -507,7 +507,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 24,
                             MovieId = 6,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7434),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2234),
                             Rating = 5,
                             Review = "Review from user 2 - 6 ",
                             UserId = 2
@@ -516,7 +516,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 25,
                             MovieId = 7,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7436),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2236),
                             Rating = 5,
                             Review = "Review from user 2 - 7 ",
                             UserId = 2
@@ -525,7 +525,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 26,
                             MovieId = 8,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7439),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2239),
                             Rating = 5,
                             Review = "Review from user 2 - 8 ",
                             UserId = 2
@@ -534,7 +534,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 27,
                             MovieId = 9,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7441),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2241),
                             Rating = 5,
                             Review = "Review from user 2 - 9 ",
                             UserId = 2
@@ -543,7 +543,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 28,
                             MovieId = 10,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7444),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2244),
                             Rating = 5,
                             Review = "Review from user 2 - 10 ",
                             UserId = 2
@@ -552,7 +552,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 29,
                             MovieId = 11,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7446),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2247),
                             Rating = 5,
                             Review = "Review from user 2 - 11 ",
                             UserId = 2
@@ -561,7 +561,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 30,
                             MovieId = 12,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7449),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2249),
                             Rating = 5,
                             Review = "Review from user 2 - 12 ",
                             UserId = 2
@@ -570,7 +570,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 31,
                             MovieId = 13,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7513),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2314),
                             Rating = 5,
                             Review = "Review from user 2 - 13 ",
                             UserId = 2
@@ -579,7 +579,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 32,
                             MovieId = 14,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7516),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2317),
                             Rating = 5,
                             Review = "Review from user 2 - 14 ",
                             UserId = 2
@@ -588,7 +588,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 33,
                             MovieId = 15,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7519),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2320),
                             Rating = 5,
                             Review = "Review from user 2 - 15 ",
                             UserId = 2
@@ -597,7 +597,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 34,
                             MovieId = 16,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7522),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2323),
                             Rating = 5,
                             Review = "Review from user 2 - 16 ",
                             UserId = 2
@@ -606,7 +606,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 35,
                             MovieId = 17,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7524),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2325),
                             Rating = 5,
                             Review = "Review from user 2 - 17 ",
                             UserId = 2
@@ -615,7 +615,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 36,
                             MovieId = 18,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7527),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2328),
                             Rating = 5,
                             Review = "Review from user 2 - 18 ",
                             UserId = 2
@@ -624,7 +624,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 37,
                             MovieId = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7530),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2330),
                             Rating = 5,
                             Review = "Review from user 3 - 1 ",
                             UserId = 3
@@ -633,7 +633,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 38,
                             MovieId = 2,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7532),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2333),
                             Rating = 5,
                             Review = "Review from user 3 - 2 ",
                             UserId = 3
@@ -642,7 +642,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 39,
                             MovieId = 3,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7535),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2338),
                             Rating = 5,
                             Review = "Review from user 3 - 3 ",
                             UserId = 3
@@ -651,7 +651,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 40,
                             MovieId = 4,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7537),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2341),
                             Rating = 5,
                             Review = "Review from user 3 - 4 ",
                             UserId = 3
@@ -660,7 +660,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 41,
                             MovieId = 5,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7539),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2344),
                             Rating = 5,
                             Review = "Review from user 3 - 5 ",
                             UserId = 3
@@ -669,7 +669,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 42,
                             MovieId = 6,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7542),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2346),
                             Rating = 5,
                             Review = "Review from user 3 - 6 ",
                             UserId = 3
@@ -678,7 +678,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 43,
                             MovieId = 7,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7545),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2349),
                             Rating = 5,
                             Review = "Review from user 3 - 7 ",
                             UserId = 3
@@ -687,7 +687,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 44,
                             MovieId = 8,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7547),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2351),
                             Rating = 5,
                             Review = "Review from user 3 - 8 ",
                             UserId = 3
@@ -696,7 +696,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 45,
                             MovieId = 9,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7549),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2354),
                             Rating = 5,
                             Review = "Review from user 3 - 9 ",
                             UserId = 3
@@ -705,7 +705,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 46,
                             MovieId = 10,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7552),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2357),
                             Rating = 5,
                             Review = "Review from user 3 - 10 ",
                             UserId = 3
@@ -714,7 +714,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 47,
                             MovieId = 11,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7555),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2360),
                             Rating = 5,
                             Review = "Review from user 3 - 11 ",
                             UserId = 3
@@ -723,7 +723,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 48,
                             MovieId = 12,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7557),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2362),
                             Rating = 5,
                             Review = "Review from user 3 - 12 ",
                             UserId = 3
@@ -732,7 +732,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 49,
                             MovieId = 13,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7560),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2365),
                             Rating = 5,
                             Review = "Review from user 3 - 13 ",
                             UserId = 3
@@ -741,7 +741,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 50,
                             MovieId = 14,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7562),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2368),
                             Rating = 5,
                             Review = "Review from user 3 - 14 ",
                             UserId = 3
@@ -750,7 +750,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 51,
                             MovieId = 15,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7564),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2370),
                             Rating = 5,
                             Review = "Review from user 3 - 15 ",
                             UserId = 3
@@ -759,7 +759,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 52,
                             MovieId = 16,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7567),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2373),
                             Rating = 5,
                             Review = "Review from user 3 - 16 ",
                             UserId = 3
@@ -768,7 +768,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 53,
                             MovieId = 17,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7569),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2375),
                             Rating = 5,
                             Review = "Review from user 3 - 17 ",
                             UserId = 3
@@ -777,7 +777,7 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 54,
                             MovieId = 18,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7572),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2378),
                             Rating = 5,
                             Review = "Review from user 3 - 18 ",
                             UserId = 3
@@ -786,163 +786,163 @@ namespace MovieApp.DataAccess.Migrations
                         {
                             Id = 55,
                             MovieId = 1,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7574),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2381),
                             Rating = 5,
                             Review = "Review from user 4 - 1 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 56,
                             MovieId = 2,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7577),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2383),
                             Rating = 5,
                             Review = "Review from user 4 - 2 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 57,
                             MovieId = 3,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7580),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2386),
                             Rating = 5,
                             Review = "Review from user 4 - 3 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 58,
                             MovieId = 4,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7582),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2388),
                             Rating = 5,
                             Review = "Review from user 4 - 4 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 59,
                             MovieId = 5,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7585),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2391),
                             Rating = 5,
                             Review = "Review from user 4 - 5 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 60,
                             MovieId = 6,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7587),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2394),
                             Rating = 5,
                             Review = "Review from user 4 - 6 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 61,
                             MovieId = 7,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7590),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2396),
                             Rating = 5,
                             Review = "Review from user 4 - 7 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 62,
                             MovieId = 8,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7592),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2399),
                             Rating = 5,
                             Review = "Review from user 4 - 8 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 63,
                             MovieId = 9,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7595),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2402),
                             Rating = 5,
                             Review = "Review from user 4 - 9 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 64,
                             MovieId = 10,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7598),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2404),
                             Rating = 5,
                             Review = "Review from user 4 - 10 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 65,
                             MovieId = 11,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7600),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2407),
                             Rating = 5,
                             Review = "Review from user 4 - 11 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 66,
                             MovieId = 12,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7603),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2409),
                             Rating = 5,
                             Review = "Review from user 4 - 12 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 67,
                             MovieId = 13,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7605),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2412),
                             Rating = 5,
                             Review = "Review from user 4 - 13 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 68,
                             MovieId = 14,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7608),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2414),
                             Rating = 5,
                             Review = "Review from user 4 - 14 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 69,
                             MovieId = 15,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7610),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2417),
                             Rating = 5,
                             Review = "Review from user 4 - 15 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 70,
                             MovieId = 16,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7613),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2419),
                             Rating = 5,
                             Review = "Review from user 4 - 16 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 71,
                             MovieId = 17,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7615),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2422),
                             Rating = 5,
                             Review = "Review from user 4 - 17 ",
-                            UserId = 3
+                            UserId = 4
                         },
                         new
                         {
                             Id = 72,
                             MovieId = 18,
-                            Posted = new DateTime(2022, 9, 11, 18, 18, 49, 659, DateTimeKind.Local).AddTicks(7618),
+                            Posted = new DateTime(2022, 9, 12, 22, 53, 47, 400, DateTimeKind.Local).AddTicks(2425),
                             Rating = 5,
                             Review = "Review from user 4 - 18 ",
-                            UserId = 3
+                            UserId = 4
                         });
                 });
 
@@ -1046,8 +1046,7 @@ namespace MovieApp.DataAccess.Migrations
                     b.HasOne("MovieApp.Domain.Entities.UserDto", "User")
                         .WithMany("SubmittedReviews")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("Movie");
 

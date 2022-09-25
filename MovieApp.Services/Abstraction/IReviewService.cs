@@ -1,4 +1,4 @@
-﻿using MovieApp.InterfaceModels.Models;
+﻿using MovieApp.InterfaceModels.Models.ReviewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +10,8 @@ namespace MovieApp.Services.Abstraction
     public interface IReviewService
     {
         void Create(SubmitReviewModel model);
+        void Update(UpdateReviewModel model);
+        ReviewModel GetById(int id);
+        void Delete(int id);
     }
 }

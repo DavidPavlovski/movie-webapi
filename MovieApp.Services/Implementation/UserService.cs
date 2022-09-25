@@ -6,7 +6,7 @@ using MovieApp.Domain.Entities;
 using MovieApp.Exceptions;
 using MovieApp.Helpers;
 using MovieApp.InterfaceModels.Enums;
-using MovieApp.InterfaceModels.Models;
+using MovieApp.InterfaceModels.Models.UserModels;
 using MovieApp.Services.Abstraction;
 using System;
 using System.Collections.Generic;
@@ -81,6 +81,15 @@ namespace MovieApp.Services.Implementation
             ValidateModel(model);
             var user = new UserDto(model.FirstName, model.LastName, model.Username, model.Email, PasswordHasher.HashPassword(model.Password), model.FavouriteGenre);
             _userRepository.Create(user);
+        }
+        public void Delete(int id)
+        {
+            var user = _userRepository.GetById(id);
+            if(user == null)
+            {
+                throw new UserException(404, id, $"User with Id:{id} does not exist");
+            }
+            _userRepository.Delete(user);
         }
 
 

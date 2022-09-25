@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MovieApp.Exceptions;
-using MovieApp.InterfaceModels.Models;
+using MovieApp.InterfaceModels.Models.MovieModels;
 using MovieApp.Services.Abstraction;
 using System.Security.Claims;
 
@@ -116,7 +116,6 @@ namespace MovieApp.API.Controllers
             catch (MovieException ex)
             {
                 return StatusCode(ex.StatusCode, ex.Message);
-
             }
             catch (UserException ex)
             {

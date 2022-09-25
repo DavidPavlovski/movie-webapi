@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MovieApp.Configurations;
 using MovieApp.Exceptions;
-using MovieApp.InterfaceModels.Models;
+using MovieApp.InterfaceModels.Models.UserModels;
 using MovieApp.Services.Abstraction;
 
 namespace MovieApp.API.Controllers
@@ -56,6 +57,27 @@ namespace MovieApp.API.Controllers
                 return BadRequest(_appSettings.DefaultErrorMessage);
 
             }
+        }
+
+        [Authorize]
+        [HttpDelete("delete/{id}")]
+        public IActionResult Delete([FromRoute] int id)
+        {
+            //TODO : IMPLEMENT AUTHORIZATION
+            try
+            {
+                _userService.Delete(id);
+                return Ok("deleted");
+            }
+            catch(UserException ex)
+            {
+                return StatusCode(ex.StatusCode, ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.InnerException);
+            }
+            
         }
     }
 }

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApp.InterfaceModels.Models
+namespace MovieApp.InterfaceModels.Models.UserModels
 {
-    public class UserModel
+    public class MovieOwnerModel
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -15,6 +15,5 @@ namespace MovieApp.InterfaceModels.Models
         public string Username { get; set; }
         public string Email { get; set; }
         public Genre FavouriteGenre { get; set; }
-        public string Token { get; set; }
     }
 }

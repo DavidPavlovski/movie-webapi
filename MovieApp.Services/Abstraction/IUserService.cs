@@ -1,4 +1,4 @@
-﻿using MovieApp.InterfaceModels.Models;
+﻿using MovieApp.InterfaceModels.Models.UserModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +11,6 @@ namespace MovieApp.Services.Abstraction
     {
         UserModel Login(LoginModel model);
         void Register(RegisterModel model);
+        void Delete(int id);
     }
 }
